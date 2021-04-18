@@ -1,0 +1,17 @@
+C:\Studia\rozw\uni\sem2\programowanie\project\GardeningShop\GardeningShop\bin\Debug\GardeningShop.exe.config
+C:\Studia\rozw\uni\sem2\programowanie\project\GardeningShop\GardeningShop\bin\Debug\GardeningShop.exe
+C:\Studia\rozw\uni\sem2\programowanie\project\GardeningShop\GardeningShop\bin\Debug\GardeningShop.pdb
+C:\Studia\rozw\uni\sem2\programowanie\project\GardeningShop\GardeningShop\obj\Debug\GardeningShop.csprojAssemblyReference.cache
+C:\Studia\rozw\uni\sem2\programowanie\project\GardeningShop\GardeningShop\obj\Debug\MainWindow.g.cs
+C:\Studia\rozw\uni\sem2\programowanie\project\GardeningShop\GardeningShop\obj\Debug\App.g.cs
+C:\Studia\rozw\uni\sem2\programowanie\project\GardeningShop\GardeningShop\obj\Debug\GardeningShop_MarkupCompile.cache
+C:\Studia\rozw\uni\sem2\programowanie\project\GardeningShop\GardeningShop\obj\Debug\GardeningShop_MarkupCompile.lref
+C:\Studia\rozw\uni\sem2\programowanie\project\GardeningShop\GardeningShop\obj\Debug\MainWindow.baml
+C:\Studia\rozw\uni\sem2\programowanie\project\GardeningShop\GardeningShop\obj\Debug\GardeningShop.g.resources
+C:\Studia\rozw\uni\sem2\programowanie\project\GardeningShop\GardeningShop\obj\Debug\GardeningShop.Properties.Resources.resources
+C:\Studia\rozw\uni\sem2\programowanie\project\GardeningShop\GardeningShop\obj\Debug\GardeningShop.csproj.GenerateResource.cache
+C:\Studia\rozw\uni\sem2\programowanie\project\GardeningShop\GardeningShop\obj\Debug\GardeningShop.csproj.CoreCompileInputs.cache
+C:\Studia\rozw\uni\sem2\programowanie\project\GardeningShop\GardeningShop\obj\Debug\GardeningShop.exe
+C:\Studia\rozw\uni\sem2\programowanie\project\GardeningShop\GardeningShop\obj\Debug\GardeningShop.pdb
+C:\Studia\rozw\uni\sem2\programowanie\project\GardeningShop\GardeningShop\obj\Debug\Homepage.g.cs
+C:\Studia\rozw\uni\sem2\programowanie\project\GardeningShop\GardeningShop\obj\Debug\Homepage.baml
