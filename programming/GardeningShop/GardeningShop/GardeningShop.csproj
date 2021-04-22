@@ -116,10 +116,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="background_flowers.png" />
+    <Resource Include="Icons\background_flowers.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="logo.png" />
+    <Resource Include="Icons\logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ShopItems\tulipany.jpg" />
