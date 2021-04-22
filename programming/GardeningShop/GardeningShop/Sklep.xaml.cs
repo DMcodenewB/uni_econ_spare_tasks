@@ -22,7 +22,32 @@ namespace GardeningShop
     {
         public Sklep()
         {
+            ShopItem item1 = new ShopItem("Słonecznik polski", "To jest słonecznik polski, po wyrośnięciu daje jadalne nasiona.", 2.99f, "ShopItems/slonecznik.jpg");
+            ShopItem item2 = new ShopItem("Słonecznik polski", "To jest słonecznik polski, po wyrośnięciu daje jadalne nasiona.", 2.99f, "ShopItems/tulipany.jpg");
+            ShopItem item3 = new ShopItem("Słonecznik polski", "To jest słonecznik polski, po wyrośnięciu daje jadalne nasiona.", 2.99f, "ShopItems/rzodkiewka.jpg");
+            ShopItem item4 = new ShopItem("Słonecznik polski", "To jest słonecznik polski, po wyrośnięciu daje jadalne nasiona.", 2.99f, "ShopItems/dynia.jpg");
+            ShopItem item5 = new ShopItem("Słonecznik polski", "To jest słonecznik polski, po wyrośnięciu daje jadalne nasiona.", 2.99f, "ShopItems/papryka_ostra.jpg");
+            ShopItem item6 = new ShopItem("Słonecznik polski", "To jest słonecznik polski, po wyrośnięciu daje jadalne nasiona.", 2.99f, "ShopItems/cebula.jpg");
+            ShopItem[] items = { item1, item2, item3, item4, item5, item6 };
+
             InitializeComponent();
         }
+    }
+
+    class ShopItem
+    {
+        public ShopItem(string itemName, string description, float price, string imagePath)
+        {
+            this.item_name = itemName;
+            this.description = description;
+            this.price = price;
+            this.image_path = imagePath;
+        }
+
+        string item_name;
+        string description;
+        float price;
+        string image_path;
+        
     }
 }

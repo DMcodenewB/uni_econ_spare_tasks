@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:GardeningShop"
+      xmlns:components="clr-namespace:GardeningShop.Components"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Sklep">
@@ -129,9 +130,28 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+
+            <!-- ten kawałek jest rozwijany>
+                <Grid Grid.Row="0" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+
+                <Rectangle Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="ShopItems/slonecznik.jpg"/>
+                    </Rectangle.Fill>
+                </Rectangle>
             
-            
-            
+            </Grid>
+            <!-->
+
         </Grid>
 
         <TextBlock Grid.Row="3" Grid.Column="5" Foreground="Gray" Text="copyright Dawid Marszalek 2021"/>

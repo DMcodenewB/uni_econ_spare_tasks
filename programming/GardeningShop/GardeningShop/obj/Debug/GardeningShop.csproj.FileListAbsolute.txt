@@ -32,3 +32,7 @@ C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop
 C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\GardeningShop.csproj.CoreCompileInputs.cache
 C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\GardeningShop.exe
 C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\GardeningShop.pdb
+C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\Sklep.g.cs
+C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\Sklep.baml
+C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\Components\UserControl1.g.cs
+C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\Components\UserControl1.baml
