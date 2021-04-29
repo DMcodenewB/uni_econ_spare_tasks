@@ -8,6 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/shopping_cart_icon.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("shopitems/cebula.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("shopitems/dynia.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("shopitems/papryka_ostra.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("shopitems/rzodkiewka.jpg")]
 
 

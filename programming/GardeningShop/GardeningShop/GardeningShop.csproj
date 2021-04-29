@@ -58,14 +58,34 @@
     <Compile Include="Components\UserControl1.xaml.cs">
       <DependentUpon>UserControl1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Kontakt.xaml.cs">
+      <DependentUpon>Kontakt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Koszyk.xaml.cs">
+      <DependentUpon>Koszyk.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PotwierdzenieZamowienia.xaml.cs">
+      <DependentUpon>PotwierdzenieZamowienia.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Sklep.xaml.cs">
       <DependentUpon>Sklep.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WyszukajZamowienie.xaml.cs">
+      <DependentUpon>WyszukajZamowienie.xaml</DependentUpon>
     </Compile>
     <Page Include="Components\UserControl1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Homepage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kontakt.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Koszyk.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -84,7 +104,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PotwierdzenieZamowienia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Sklep.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WyszukajZamowienie.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -129,6 +157,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icons\shopping_cart_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ShopItems\cebula.jpg" />
+    <Resource Include="ShopItems\dynia.jpg" />
+    <Resource Include="ShopItems\papryka_ostra.jpg" />
+    <Resource Include="ShopItems\rzodkiewka.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

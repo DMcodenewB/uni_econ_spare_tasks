@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:GardeningShop"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="600" d:DesignWidth="800"
       Title="Homepage">
 
     <Grid Margin="0,0,0,0" Background="Beige" ShowGridLines="True">
@@ -33,7 +33,7 @@
             </Rectangle>
         <Button Height="90" Width="90" Grid.Row="0" Grid.Column="0" BorderThickness="2px" BorderBrush="Bisque">
             <Button.Content>
-                <Image Source="logo.png"/>
+                <Image Source="Icons/logo.png"/>
             </Button.Content>
         </Button>
         <TextBlock Grid.Row="0" Grid.Column="1"
@@ -118,6 +118,8 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        
+        
 
         <TextBlock Grid.Row="3" Grid.Column="5" Foreground="Gray" Text="copyright Dawid Marszalek 2021"/>
     </Grid>

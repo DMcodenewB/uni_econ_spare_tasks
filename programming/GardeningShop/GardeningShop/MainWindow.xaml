@@ -5,6 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GardeningShop"
         mc:Ignorable="d"
-        Title="SklepOgrodniczy" Height="450" Width="800" Source="Homepage.xaml">
+        Title="SklepOgrodniczy" Height="600" Width="800" Source="WyszukajZamowienie.xaml">
     
 </NavigationWindow>
