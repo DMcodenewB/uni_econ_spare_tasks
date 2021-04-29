@@ -70,6 +70,9 @@
     <Compile Include="Sklep.xaml.cs">
       <DependentUpon>Sklep.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SzczegolyZamowienia.xaml.cs">
+      <DependentUpon>SzczegolyZamowienia.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WyszukajZamowienie.xaml.cs">
       <DependentUpon>WyszukajZamowienie.xaml</DependentUpon>
     </Compile>
@@ -109,6 +112,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Sklep.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SzczegolyZamowienia.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
