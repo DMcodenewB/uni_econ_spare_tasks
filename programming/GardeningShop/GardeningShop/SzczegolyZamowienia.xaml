@@ -8,7 +8,7 @@
       d:DesignHeight="600" d:DesignWidth="800"
       Title="SzczegolyZamowienia">
 
-    <Grid Margin="0,0,0,0" Background="Beige" ShowGridLines="True">
+    <Grid Margin="0,0,0,0" Background="Beige">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
             <ColumnDefinition Width="*"/>
@@ -31,7 +31,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Button Height="90" Width="90" Grid.Row="0" Grid.Column="0" BorderThickness="2px" BorderBrush="Bisque">
+        <Button Height="90" Width="90" Grid.Row="0" Grid.Column="0" BorderThickness="2px" BorderBrush="Bisque" Click="LogoBtnClick">
             <Button.Content>
                 <Image Source="Icons/logo.png"/>
             </Button.Content>
@@ -62,7 +62,7 @@
             BorderThickness="0"
             Foreground="Beige"
             HorizontalContentAlignment="Center"
-            Content="Strona główna">
+            Content="Strona główna" Click="HomepageBtnClick">
             <Button.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                     <GradientStop Color="#268b07" Offset="0.0"/>
@@ -78,7 +78,7 @@
             BorderThickness="0"
             Foreground="Beige"
             HorizontalContentAlignment="Center"
-            Content="Sklep">
+            Content="Sklep" Click="SklepBtnClick">
             <Button.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                     <GradientStop Color="#268b07" Offset="0.0"/>
@@ -94,7 +94,7 @@
             BorderThickness="0"
             Foreground="Beige"
             HorizontalContentAlignment="Center"
-            Content="Kontakt">
+            Content="Kontakt" Click="KontaktBtnClick">
             <Button.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                     <GradientStop Color="#268b07" Offset="0.0"/>
@@ -110,7 +110,7 @@
             BorderThickness="0"
             Foreground="Beige"
             HorizontalContentAlignment="Center"
-            Content="Koszyk">
+            Content="Koszyk" Click="KoszykBtnClick">
             <Button.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                     <GradientStop Color="#268b07" Offset="0.0"/>

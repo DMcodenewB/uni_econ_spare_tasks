@@ -8,7 +8,7 @@
       d:DesignHeight="600" d:DesignWidth="800"
       Title="Homepage">
 
-    <Grid Margin="0,0,0,0" Background="Beige" ShowGridLines="True">
+    <Grid Margin="0,0,0,0" Background="Beige">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
             <ColumnDefinition Width="*"/>
@@ -30,8 +30,8 @@
                     <GradientStop Color="#3e3e3e" Offset="1.0"/>
                 </LinearGradientBrush>
             </Rectangle.Fill>
-            </Rectangle>
-        <Button Height="90" Width="90" Grid.Row="0" Grid.Column="0" BorderThickness="2px" BorderBrush="Bisque">
+        </Rectangle>
+        <Button Height="90" Width="90" Grid.Row="0" Grid.Column="0" BorderThickness="2px" BorderBrush="Bisque" Click="LogoBtnClick">
             <Button.Content>
                 <Image Source="Icons/logo.png"/>
             </Button.Content>
@@ -62,7 +62,7 @@
             BorderThickness="0"
             Foreground="Beige"
             HorizontalContentAlignment="Center"
-            Content="Strona główna">
+            Content="Strona główna" Click="HomepageBtnClick">
             <Button.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                     <GradientStop Color="#268b07" Offset="0.0"/>
@@ -78,7 +78,7 @@
             BorderThickness="0"
             Foreground="Beige"
             HorizontalContentAlignment="Center"
-            Content="Sklep">
+            Content="Sklep" Click="SklepBtnClick">
             <Button.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                     <GradientStop Color="#268b07" Offset="0.0"/>
@@ -94,7 +94,7 @@
             BorderThickness="0"
             Foreground="Beige"
             HorizontalContentAlignment="Center"
-            Content="Kontakt">
+            Content="Kontakt" Click="KontaktBtnClick">
             <Button.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                     <GradientStop Color="#268b07" Offset="0.0"/>
@@ -110,7 +110,7 @@
             BorderThickness="0"
             Foreground="Beige"
             HorizontalContentAlignment="Center"
-            Content="Koszyk">
+            Content="Koszyk" Click="KoszykBtnClick">
             <Button.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                     <GradientStop Color="#268b07" Offset="0.0"/>
@@ -118,8 +118,48 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        
-        
+
+        <Grid Grid.Row="2" Grid.Column="0" 
+              Grid.RowSpan="2" Grid.ColumnSpan="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Rectangle Grid.RowSpan="2">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="Icons/background_flowers.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+
+            <Button Grid.Row="0"
+                    Height="80" Width="240"
+                    VerticalAlignment="Bottom"
+                    Margin="0,0,300,0"
+                    FontSize="24"
+                    Background="AntiqueWhite"
+                    Foreground="#cc8b4b"
+                    BorderBrush="#cc8b4b" 
+                    BorderThickness="1px"
+                    Content="Przejdź do sklepu" Click="SklepBtnClick">
+            </Button>
+
+            <Button Grid.Row="0"
+                    Height="80" Width="240"
+                    VerticalAlignment="Bottom"
+                    Margin="300,0,0,0"
+                    FontSize="24"
+                    Background="AntiqueWhite"
+                    Foreground="#cc8b4b"
+                    BorderBrush="#cc8b4b" 
+                    BorderThickness="1px" Click="StatusZamBtnClick"
+                    >
+                <Button.Content>
+                    <TextBlock Text="Sprawdź status zamówienia" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button.Content>
+            </Button>
+
+        </Grid>
 
         <TextBlock Grid.Row="3" Grid.Column="5" Foreground="Gray" Text="copyright Dawid Marszalek 2021"/>
     </Grid>

@@ -55,15 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Components\UserControl1.xaml.cs">
-      <DependentUpon>UserControl1.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Kontakt.xaml.cs">
       <DependentUpon>Kontakt.xaml</DependentUpon>
     </Compile>
     <Compile Include="Koszyk.xaml.cs">
       <DependentUpon>Koszyk.xaml</DependentUpon>
     </Compile>
+    <Compile Include="KoszykRekord.cs" />
+    <Compile Include="ShopItem.cs" />
     <Compile Include="PotwierdzenieZamowienia.xaml.cs">
       <DependentUpon>PotwierdzenieZamowienia.xaml</DependentUpon>
     </Compile>
@@ -76,10 +75,7 @@
     <Compile Include="WyszukajZamowienie.xaml.cs">
       <DependentUpon>WyszukajZamowienie.xaml</DependentUpon>
     </Compile>
-    <Page Include="Components\UserControl1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Compile Include="Zamowienie.cs" />
     <Page Include="Homepage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -146,6 +142,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="StanKoszyka.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -170,6 +167,9 @@
     <Resource Include="ShopItems\dynia.jpg" />
     <Resource Include="ShopItems\papryka_ostra.jpg" />
     <Resource Include="ShopItems\rzodkiewka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
