@@ -100,6 +100,8 @@ namespace GardeningShop
 
                 cartButton.Background = brush;
                 cartButton.Content = "Do koszyka";
+                cartButton.Tag = item;
+                cartButton.Click += new RoutedEventHandler(DoKoszykaClick);
                 
 
                 TextBlock textBlock = new TextBlock();
@@ -140,7 +142,12 @@ namespace GardeningShop
 
         public List<ShopItem> Items { get; set; }
 
-
+        private void DoKoszykaClick(object sender, RoutedEventArgs e) {
+            var b = sender as Button;
+            KoszykRekord rec = new KoszykRekord(b.Tag as ShopItem);
+            MainWindow.StanKoszyka.DodajDoKoszyka(rec);
+            b.Content = "Dodano do koszyka";
+        }
 
         private void LogoBtnClick(object sender, RoutedEventArgs e)
         {
@@ -171,5 +178,7 @@ namespace GardeningShop
             Sklep newpage = new Sklep();
             NavigationService.Navigate(newpage);
         }
+
+        
     }
 }

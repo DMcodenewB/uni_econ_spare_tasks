@@ -20,9 +20,16 @@ namespace GardeningShop
     /// </summary>
     public partial class MainWindow : NavigationWindow
     {
+        private static StanKoszyka _stanKoszyka;
+        public static StanKoszyka StanKoszyka { 
+            get { if (_stanKoszyka == null) _stanKoszyka = new StanKoszyka(); return _stanKoszyka; } 
+            set {_stanKoszyka = value;}
+        }
 
         public MainWindow()
         {
+            StanKoszyka = new StanKoszyka();
+            
             InitializeComponent();
         }
 

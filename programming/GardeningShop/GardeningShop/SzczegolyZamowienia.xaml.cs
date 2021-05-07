@@ -20,10 +20,21 @@ namespace GardeningShop
     /// </summary>
     public partial class SzczegolyZamowienia : Page
     {
-        public SzczegolyZamowienia()
+        public SzczegolyZamowienia(Zamowienie zam)
         {
             InitializeComponent();
+
+            List<KoszykRekord> rekords = zam.listazakupow;
+
+            foreach (KoszykRekord rek in rekords)
+            {
+                SzczegolyZamowieniaGrid.Items.Add(rek);
+            }
+
+            ZamowienieNr.Text = "Zamówienie nr " + zam.idZamowienia;
+            CenaSum.Text = "Cena: " + zam.Cena_Calk.ToString("0.00");
         }
+        
 
         private void LogoBtnClick(object sender, RoutedEventArgs e)
         {

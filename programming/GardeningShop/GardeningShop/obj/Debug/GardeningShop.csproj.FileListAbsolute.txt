@@ -34,8 +34,6 @@ C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop
 C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\GardeningShop.pdb
 C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\Sklep.g.cs
 C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\Sklep.baml
-C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\Components\UserControl1.g.cs
-C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\Components\UserControl1.baml
 C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\Koszyk.g.cs
 C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\Koszyk.baml
 C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\PotwierdzenieZamowienia.g.cs
@@ -46,4 +44,3 @@ C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop
 C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\WyszukajZamowienie.baml
 C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\SzczegolyZamowienia.g.cs
 C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\SzczegolyZamowienia.baml
-C:\Users\Dawid\Desktop\repository\uni_econ_spare_tasks\programming\GardeningShop\GardeningShop\obj\Debug\GeneratedInternalTypeHelper.g.cs

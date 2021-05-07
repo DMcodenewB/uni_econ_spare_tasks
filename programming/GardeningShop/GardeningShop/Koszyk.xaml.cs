@@ -24,6 +24,19 @@ namespace GardeningShop
         public Koszyk()
         {
             InitializeComponent();
+
+            List<KoszykRekord> rekords = MainWindow.StanKoszyka.listaZakupow;
+            foreach(KoszykRekord rek in rekords)
+            {
+                PrzedmiotyWKoszyku.Items.Add(rek);
+            }
+
+            CenaSum.Text = "Razem: " + MainWindow.StanKoszyka.cenaCalkowita.ToString("0.00") + "zł";
+            
+            //zrobic binding do pol ShopItem
+            //dokonczyc zamowienie i baze danych
+
+
         }
 
         private void LogoBtnClick(object sender, RoutedEventArgs e)
@@ -55,6 +68,14 @@ namespace GardeningShop
             Sklep newpage = new Sklep();
             NavigationService.Navigate(newpage);
         }
-    }
 
+        private void ZamawiamBtnClick(object sender, RoutedEventArgs e)
+        {
+            Zamowienie noweZamowienie = new Zamowienie(MainWindow.StanKoszyka);
+            SzczegolyZamowienia newpage = new SzczegolyZamowienia(noweZamowienie);
+
+            NavigationService.Navigate(newpage);
+        }
+    }
+   
 }

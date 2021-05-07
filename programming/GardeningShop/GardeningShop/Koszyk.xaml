@@ -119,7 +119,7 @@
             </Button.Background>
         </Button>
 
-        <Grid Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" Margin="0,10,100,10">
+        <Grid x:Name="KoszykGrid" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" Margin="0,10,100,10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="4*"/>
@@ -143,19 +143,35 @@
                        FontStretch="Normal"
                        Text="Mój koszyk"/>
 
-            <ListBox Grid.Row="1" Grid.ColumnSpan="3"
+            <Rectangle Grid.Row="1" Grid.ColumnSpan="3"
                      Margin="0,10,0,0"
-                     Background="FloralWhite"
-                     BorderBrush="#cc8b4b"
-                     BorderThickness="1px">
-            </ListBox>
+                     Fill="FloralWhite">
+            </Rectangle>
 
-            <TextBlock Grid.Row="2" Grid.Column="2"
-                       FontSize="25" FontWeight="ExtraLight"
-                       Foreground="#cc8b4b"
-                       VerticalAlignment="Center"
-                       FontStretch="Normal"
-                       Text="Cena: "/>
+            <DataGrid Name="PrzedmiotyWKoszyku" Grid.Row="1"
+                      Grid.Column="0" Grid.ColumnSpan="3">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Nazwa produktu" Binding="{Binding Itemname}" Width="5*"/>
+                    <DataGridTextColumn Header="Ilość" Binding="{Binding Ilosc}" Width="*"/>
+                    <DataGridTextColumn Header="Cena" Binding="{Binding Cena_sum}" Width="*"/>
+                </DataGrid.Columns>
+                <DataGrid.Resources>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="Bisque"/>
+                        <Setter Property="Foreground" Value="#cc8b4b"/>
+                        <Setter Property="FontWeight" Value="SemiBold"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    </Style>
+                </DataGrid.Resources>
+            </DataGrid>
+
+            <TextBlock Name="CenaSum" Grid.Row="2" Grid.Column="2"
+                    FontSize="25" FontWeight="ExtraLight"
+                    Foreground="#cc8b4b"
+                    VerticalAlignment="Center"
+                    FontStretch="Normal">
+                
+            </TextBlock>
 
             <Button Grid.Row="3" Grid.Column="2"
                     Height="Auto"
@@ -169,7 +185,9 @@
                     VerticalAlignment="Center"
                     VerticalContentAlignment="Center"
                     Foreground="#cc8b4b"
-                    Content="Zamawiam"/>
+                    Content="Zamawiam"
+                    Tag="MainWindow.StanKoszyka"
+                    Click="ZamawiamBtnClick"/>
         </Grid>
 
         <TextBlock Grid.Row="3" Grid.Column="5" Foreground="Gray" Text="copyright Dawid Marszalek 2021"/>

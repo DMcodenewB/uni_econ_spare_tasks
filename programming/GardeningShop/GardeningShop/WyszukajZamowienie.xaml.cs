@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace GardeningShop
 {
@@ -23,6 +24,18 @@ namespace GardeningShop
         public WyszukajZamowienie()
         {
             InitializeComponent();
+            //wczytajZamowienia("Zamowienia.csv");
+        }
+        List<String> Zamowienia;
+
+        private List<String> wczytajZamowienia(string nazwaPliku)
+        {
+            List<String> zamowieniaZPliku;
+            StreamReader reader = new StreamReader(nazwaPliku);
+
+            return null;
+
+
         }
 
         private void LogoBtnClick(object sender, RoutedEventArgs e)

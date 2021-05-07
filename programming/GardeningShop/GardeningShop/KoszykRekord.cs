@@ -10,27 +10,27 @@ namespace GardeningShop
     {
         public KoszykRekord(ShopItem item)
         {
-            this.item = item;
-            this.ilosc = 1;
+            this.Itemname = item.item_name;
+            this.Ilosc = 1;
+            this.Cena_zwyk = item.price;
+            this.Cena_sum = item.price * Ilosc;
         }
 
         public void SetIlosc(int newIlosc)
         {
-            this.ilosc = newIlosc;
+            this.Ilosc = newIlosc;
+            this.Cena_sum = Cena_zwyk * Ilosc;
         }
 
         public int GetIlosc()
         {
-            return ilosc;
+            return Ilosc;
         }
 
-        public ShopItem GetItem()
-        {
-            return item;
-        }
-
-        private ShopItem item;
-        private int ilosc;
+        public string Itemname { get; set; }
+        public int Ilosc { get; set; }
+        public float Cena_zwyk { get; set; }
+        public float Cena_sum { get; set; }
 
     }
 }

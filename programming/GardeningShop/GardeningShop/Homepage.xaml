@@ -152,10 +152,10 @@
                     Background="AntiqueWhite"
                     Foreground="#cc8b4b"
                     BorderBrush="#cc8b4b" 
-                    BorderThickness="1px" Click="StatusZamBtnClick"
+                    BorderThickness="1px"
                     >
                 <Button.Content>
-                    <TextBlock Text="Sprawdź status zamówienia" TextWrapping="Wrap" TextAlignment="Center"/>
+                    <TextBlock Text="Wyszukaj zamówienie (wkrótce)" TextWrapping="Wrap" TextAlignment="Center"/>
                 </Button.Content>
             </Button>
 

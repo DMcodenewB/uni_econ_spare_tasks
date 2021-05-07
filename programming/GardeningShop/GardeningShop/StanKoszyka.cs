@@ -8,16 +8,26 @@ namespace GardeningShop
 {
     public class StanKoszyka
     {
-        StanKoszyka()
+        public StanKoszyka()
         {
             listaZakupow = new List<KoszykRekord>();
             PrzeliczCene();
         }
-        List<KoszykRekord> listaZakupow;
-        float cenaCalkowita;
+        public List<KoszykRekord> listaZakupow;
+        public float cenaCalkowita;
 
         public void DodajDoKoszyka(KoszykRekord rekord)
         {
+            foreach(KoszykRekord rec in listaZakupow)
+            {
+                if (rec.Itemname.Equals(rekord.Itemname))
+                {
+                    rec.SetIlosc(rec.GetIlosc() + 1);
+                    PrzeliczCene();
+                    return;
+                }
+
+            }
             listaZakupow.Add(rekord);
             PrzeliczCene();
         }
@@ -27,7 +37,7 @@ namespace GardeningShop
             float nowacena = 0;
             foreach (KoszykRekord re in listaZakupow)
             {
-                nowacena += re.GetItem().price * re.GetIlosc();
+                nowacena += re.Cena_zwyk * re.GetIlosc();
             }
 
             cenaCalkowita = nowacena;

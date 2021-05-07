@@ -143,6 +143,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <Compile Include="StanKoszyka.cs" />
+    <None Include="Zamowienia.csv" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -168,8 +169,6 @@
     <Resource Include="ShopItems\papryka_ostra.jpg" />
     <Resource Include="ShopItems\rzodkiewka.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Components\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
