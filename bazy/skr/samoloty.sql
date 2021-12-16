@@ -1,0 +1,15 @@
+insert into Samolot(IdSamolotu,Model,MaksPasażerów,PojemnośćBaku,MaksPrędkość,DataPrzyjęcia,CzyRejsowy) values (101,'Boeing 737',158,24500,774,'2000-06-03',0);
+insert into Samolot(IdSamolotu,Model,MaksPasażerów,PojemnośćBaku,MaksPrędkość,DataPrzyjęcia,CzyRejsowy) values (111,'Boeing 777',226,33400,736,'1999-07-23',1);
+insert into Samolot(IdSamolotu,Model,MaksPasażerów,PojemnośćBaku,MaksPrędkość,DataPrzyjęcia,CzyRejsowy) values (121,'Boeing 767',197,25700,652,'2019-03-13',0);
+insert into Samolot(IdSamolotu,Model,MaksPasażerów,PojemnośćBaku,MaksPrędkość,DataPrzyjęcia,CzyRejsowy) values (131,'Boeing 787',145,24900,855,'2008-04-28',0);
+insert into Samolot(IdSamolotu,Model,MaksPasażerów,PojemnośćBaku,MaksPrędkość,DataPrzyjęcia,CzyRejsowy) values (141,'Airbus A220',153,20700,673,'2007-09-03',0);
+insert into Samolot(IdSamolotu,Model,MaksPasażerów,PojemnośćBaku,MaksPrędkość,DataPrzyjęcia,CzyRejsowy) values (151,'Airbus A300',217,28400,653,'2015-12-17',1);
+insert into Samolot(IdSamolotu,Model,MaksPasażerów,PojemnośćBaku,MaksPrędkość,DataPrzyjęcia,CzyRejsowy) values (161,'Airbus A318',257,34300,667,'2001-09-26',1);
+insert into Samolot(IdSamolotu,Model,MaksPasażerów,PojemnośćBaku,MaksPrędkość,DataPrzyjęcia,CzyRejsowy) values (171,'Airbus A340',307,41900,682,'1992-02-20',1);
+insert into Samolot(IdSamolotu,Model,MaksPasażerów,PojemnośćBaku,MaksPrędkość,DataPrzyjęcia,CzyRejsowy) values (181,'Airbus A330',168,27800,827,'2005-02-14',0);
+insert into Samolot(IdSamolotu,Model,MaksPasażerów,PojemnośćBaku,MaksPrędkość,DataPrzyjęcia,CzyRejsowy) values (191,'Airbus A380',110,19200,866,'1994-07-19',0);
+insert into Samolot(IdSamolotu,Model,MaksPasażerów,PojemnośćBaku,MaksPrędkość,DataPrzyjęcia,CzyRejsowy) values (201,'Cessna 340',98,15000,759,'2019-04-23',0);
+insert into Samolot(IdSamolotu,Model,MaksPasażerów,PojemnośćBaku,MaksPrędkość,DataPrzyjęcia,CzyRejsowy) values (211,'Cessna 400',288,39500,684,'1991-06-24',1);
+insert into Samolot(IdSamolotu,Model,MaksPasażerów,PojemnośćBaku,MaksPrędkość,DataPrzyjęcia,CzyRejsowy) values (221,'Cessna 550',162,26800,826,'1998-06-06',0);
+insert into Samolot(IdSamolotu,Model,MaksPasażerów,PojemnośćBaku,MaksPrędkość,DataPrzyjęcia,CzyRejsowy) values (231,'Cessna 680',243,35800,734,'1993-11-01',1);
+insert into Samolot(IdSamolotu,Model,MaksPasażerów,PojemnośćBaku,MaksPrędkość,DataPrzyjęcia,CzyRejsowy) values (241,'Cessna 526',79,13800,864,'2004-02-09',0);
