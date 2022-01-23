@@ -163,7 +163,7 @@
                          Padding="5"
                          x:Name="NrZamowieniaBox"/>
 
-                <TextBlock Grid.Column="0" IsHitTestVisible="False" Text="Wprowadź numer zamówienia" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" FontSize="20" Foreground="DarkGray">
+                <TextBlock Name="NrZamText" Grid.Column="0" IsHitTestVisible="False" Text="Wprowadź numer zamówienia" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" FontSize="20" Foreground="DarkGray">
                     <TextBlock.Style>
                         <Style TargetType="{x:Type TextBlock}">
                             <Setter Property="Visibility" Value="Collapsed"/>
@@ -176,13 +176,14 @@
                     </TextBlock.Style>
                 </TextBlock>
 
-                <Button Grid.Column="1"
+                <Button Name="SzukajBtn" Grid.Column="1"
                         FontSize="20"
                         Background="AntiqueWhite"
                         Foreground="#cc8b4b"
                         BorderBrush="#cc8b4b" 
                         BorderThickness="1px"
-                        Content="Szukaj">
+                        Content="Szukaj"
+                        Click="SzukajBtnClick">
                 </Button>
             </Grid>
 

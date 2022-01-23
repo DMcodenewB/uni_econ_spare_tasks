@@ -27,42 +27,36 @@ namespace GardeningShop
             Items.Add(new ShopItem
             {
                 item_name = "Słonecznik polski",
-                description = "To jest słonecznik polski, po wyrośnięciu daje jadalne nasiona.",
                 price = 2.99f,
                 image_path = "ShopItems/slonecznik.jpg"
             });
             Items.Add(new ShopItem
             {
                 item_name = "Tulipan ogrodowy",
-                description = "Tulipan, dający ładnie wyglądające kwiaty.",
                 price = 3.49f,
                 image_path = "ShopItems/tulipany.jpg"
             });
             Items.Add(new ShopItem
             {
                 item_name = "Rzodkiewka",
-                description = "Soczysta, różowa rzodkiewka, wysiew wczesny.",
                 price = 1.99f,
                 image_path = "ShopItems/rzodkiewka.jpg"
             });
             Items.Add(new ShopItem
             {
                 item_name = "Dynia złota",
-                description = "Dynia ogrodowa w kolorze złoto-pomarańczowym.",
                 price = 2.59f,
                 image_path = "ShopItems/dynia.jpg"
             });
             Items.Add(new ShopItem
             {
                 item_name = "Papryka ostra",
-                description = "Papryka ostra Anaheim, wysiew średniowczesny.",
                 price = 4.99f,
                 image_path = "ShopItems/papryka_ostra.jpg"
             });
             Items.Add(new ShopItem
             {
                 item_name = "Cebula",
-                description = "Cebula ogrodowa, idealna do większości dań.",
                 price = 0.99f,
                 image_path = "ShopItems/cebula.jpg"
             });

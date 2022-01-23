@@ -32,7 +32,7 @@ namespace GardeningShop
             }
 
             ZamowienieNr.Text = "Zamówienie nr " + zam.idZamowienia;
-            CenaSum.Text = "Cena: " + zam.Cena_Calk.ToString("0.00");
+            CenaSum.Text = "Cena: " + zam.Cena_Calk.ToString("0.00") + "zł";
         }
         
 

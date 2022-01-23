@@ -24,15 +24,38 @@ namespace GardeningShop
         public WyszukajZamowienie()
         {
             InitializeComponent();
-            //wczytajZamowienia("Zamowienia.csv");
+            wczytajZamowienia("Zamowienia.csv");
         }
         List<String> Zamowienia;
 
         private List<String> wczytajZamowienia(string nazwaPliku)
         {
-            List<String> zamowieniaZPliku;
+            List<Zamowienie> zamowieniaZPliku = new List<Zamowienie>();
             StreamReader reader = new StreamReader(nazwaPliku);
 
+            while (!reader.EndOfStream)
+            {
+                string buildInput = reader.ReadLine();
+                string[] splitListFromFields = buildInput.Split(':');
+                string[] fields = splitListFromFields[0].Split(';');
+                string[] listItems = splitListFromFields[1].Split('|');
+
+
+                List<KoszykRekord> rekordy = new List<KoszykRekord>();
+                for(int i = 0; i < listItems.Length - 1; i++)
+                {
+                    string[] koszykFields = listItems[i].Split(';');
+                    KoszykRekord rekord = new KoszykRekord(koszykFields[0], koszykFields[1], koszykFields[2]);
+                    rekordy.Add(rekord);
+                }
+                
+                StanKoszyka stan = new StanKoszyka(rekordy);
+                Zamowienie zam = new Zamowienie(stan);
+
+                zamowieniaZPliku.Add(zam);
+            }
+
+            reader.Close();
             return null;
 
 
@@ -66,6 +89,11 @@ namespace GardeningShop
         {
             Sklep newpage = new Sklep();
             NavigationService.Navigate(newpage);
+        }
+
+        private void SzukajBtnClick(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

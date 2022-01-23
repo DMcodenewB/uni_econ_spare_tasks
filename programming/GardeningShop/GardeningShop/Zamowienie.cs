@@ -29,17 +29,18 @@ namespace GardeningShop
         }
         private void zapiszZamowienie()
         {
-            StreamWriter writer = new StreamWriter("../../Zamowienia.csv");
+            StreamWriter writer = new StreamWriter("../../Zamowienia.csv", true);
 
             string output = "";
             output += idZamowienia;
-            output += ",";
-            foreach(KoszykRekord rek in listazakupow)
-            {
-                output += rek.Itemname + ";" + rek.Ilosc.ToString() + ";" + rek.Cena_sum.ToString();
-            }
-            output += ",";
+            output += ";";
             output += Cena_Calk.ToString("0.00");
+            output += ":";
+            foreach (KoszykRekord rek in listazakupow)
+            {
+                output += rek.Itemname + ";" + rek.Ilosc.ToString() + ";" + rek.Cena_sum.ToString() + "|";
+            }
+            
 
             writer.WriteLine(output);
 

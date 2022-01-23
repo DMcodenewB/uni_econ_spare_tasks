@@ -16,6 +16,13 @@ namespace GardeningShop
             this.Cena_sum = item.price * Ilosc;
         }
 
+        public KoszykRekord(string itemname, string ilosc, string cena)
+        {
+            this.Itemname = itemname;
+            this.Ilosc = Int32.Parse(ilosc);
+            this.Cena_sum = float.Parse(cena);
+        }
+
         public void SetIlosc(int newIlosc)
         {
             this.Ilosc = newIlosc;

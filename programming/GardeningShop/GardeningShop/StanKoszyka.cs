@@ -13,6 +13,11 @@ namespace GardeningShop
             listaZakupow = new List<KoszykRekord>();
             PrzeliczCene();
         }
+        public StanKoszyka(List<KoszykRekord> rekords)
+        {
+            listaZakupow = rekords;
+            PrzeliczCene();
+        }
         public List<KoszykRekord> listaZakupow;
         public float cenaCalkowita;
 

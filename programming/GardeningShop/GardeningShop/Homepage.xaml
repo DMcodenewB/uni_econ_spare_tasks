@@ -152,8 +152,7 @@
                     Background="AntiqueWhite"
                     Foreground="#cc8b4b"
                     BorderBrush="#cc8b4b" 
-                    BorderThickness="1px"
-                    >
+                    BorderThickness="1px">
                 <Button.Content>
                     <TextBlock Text="Wyszukaj zamówienie (wkrótce)" TextWrapping="Wrap" TextAlignment="Center"/>
                 </Button.Content>
