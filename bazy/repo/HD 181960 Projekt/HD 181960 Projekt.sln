@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "181960_Zaliczenie_HD", "HD 181960 Projekt\181960_Zaliczenie_HD.dwproj", "{2CF5B15A-9FE6-412F-804F-99CDB7EDDB3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CF5B15A-9FE6-412F-804F-99CDB7EDDB3B}.Development|Default.ActiveCfg = Development
+		{2CF5B15A-9FE6-412F-804F-99CDB7EDDB3B}.Development|Default.Build.0 = Development
+		{2CF5B15A-9FE6-412F-804F-99CDB7EDDB3B}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {356AAED2-C1B9-4D23-9025-F344A9D98B3E}
+	EndGlobalSection
+EndGlobal

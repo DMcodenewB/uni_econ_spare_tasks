@@ -1,0 +1,202 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="41292890-379e-4ba0-b975-0cf36561ec26" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Zaliczenie HD 181960 DSV</ID>
+  <Name>Zaliczenie HD 181960 DSV</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Zaliczenie HD 181960 DS</DataSourceID>
+  <Schema>
+    <xs:schema id="Zaliczenie_x0020_HD_x0020_181960_x0020_DSV" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Zaliczenie_x0020_HD_x0020_181960_x0020_DSV" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="561c3950-7754-4c63-a54a-c2eba3ba0f47">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Lotnisko" msprop:design-time-name="f402fd8e-5ce3-48d8-953c-ede1fc4de40a" msprop:DbTableName="Lotnisko" msprop:FriendlyName="Lotnisko" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdLotniska" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="636ef8e6-d1b3-49bf-94f7-87cd18b0117f" msprop:DbColumnName="IdLotniska" msprop:FriendlyName="IdLotniska" type="xs:int" />
+                  <xs:element name="NazwaLotniska" msprop:design-time-name="9412efff-995b-4094-a15d-18700ee1fbf5" msprop:DbColumnName="NazwaLotniska" msprop:FriendlyName="NazwaLotniska">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SkrotLotniska" msprop:design-time-name="237e4460-6789-427a-9390-435c44d2eedb" msprop:DbColumnName="SkrotLotniska" msprop:FriendlyName="SkrotLotniska">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Kraj" msprop:design-time-name="7b6daf88-ca39-49e4-8be5-94ad5b5fc198" msprop:DbColumnName="Kraj" msprop:FriendlyName="Kraj">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CzyObslugujeRejsowe" msprop:design-time-name="9ecb5289-ae97-4196-9a12-0730722bc715" msprop:DbColumnName="CzyObslugujeRejsowe" msprop:FriendlyName="CzyObslugujeRejsowe" type="xs:boolean" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_LotPasażera" msprop:design-time-name="fb2b30df-d494-4da1-aedb-72e183bdd0dc" msprop:DbTableName="LotPasażera" msprop:FriendlyName="LotPasażera" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdLotu" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="2ae68417-3b8a-494a-afa3-6ac1f39925f1" msprop:DbColumnName="IdLotu" msprop:FriendlyName="IdLotu" type="xs:int" />
+                  <xs:element name="IdBiletu" msprop:design-time-name="694043fa-0fb8-4b75-bde5-88bdc192d58b" msprop:DbColumnName="IdBiletu" msprop:FriendlyName="IdBiletu" type="xs:int" />
+                  <xs:element name="IdSamolotu" msprop:design-time-name="347277d7-664a-4795-bda0-32e745af8931" msprop:DbColumnName="IdSamolotu" msprop:FriendlyName="IdSamolotu" type="xs:int" />
+                  <xs:element name="IdPilota" msprop:design-time-name="5fa687c1-30fe-49b0-8445-20ff253f09b7" msprop:DbColumnName="IdPilota" msprop:FriendlyName="IdPilota" type="xs:int" />
+                  <xs:element name="DataWylotu" msprop:design-time-name="84e8f182-3078-4b39-a51f-a7b3718e45b9" msprop:DbColumnName="DataWylotu" msprop:FriendlyName="DataWylotu" type="xs:dateTime" />
+                  <xs:element name="GodzinaWylotu" msdata:DataType="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:design-time-name="89b885f2-3f94-461e-86b6-c2580410a031" msprop:DbColumnName="GodzinaWylotu" msprop:FriendlyName="GodzinaWylotu" type="xs:anyType" />
+                  <xs:element name="CzasLotu" msdata:DataType="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:design-time-name="5eda72e3-ec72-4992-a0b3-3a717cc7ba6d" msprop:DbColumnName="CzasLotu" msprop:FriendlyName="CzasLotu" type="xs:anyType" />
+                  <xs:element name="IdLotniskoWylotu" msprop:design-time-name="0f9ae00b-4871-4b22-a4b4-35b98e5d5885" msprop:DbColumnName="IdLotniskoWylotu" msprop:FriendlyName="IdLotniskoWylotu" type="xs:int" />
+                  <xs:element name="CelLotu" msprop:design-time-name="585074ed-b559-4062-b982-2d121da4aec1" msprop:DbColumnName="CelLotu" msprop:FriendlyName="CelLotu">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Imię" msprop:design-time-name="c85f7591-1223-4e94-8d98-073d08d580a4" msprop:DbColumnName="Imię" msprop:FriendlyName="Imię">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="25" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Nazwisko" msprop:design-time-name="f433d743-a6db-4701-9e77-60184e21df49" msprop:DbColumnName="Nazwisko" msprop:FriendlyName="Nazwisko">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NrTel" msprop:design-time-name="108c70b8-f8f8-4ede-b173-74718d092f7a" msprop:DbColumnName="NrTel" msprop:FriendlyName="NrTel">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="12" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="KrajPochodzenia" msprop:design-time-name="9da93ba5-b596-4e77-a195-1f3ececd773d" msprop:DbColumnName="KrajPochodzenia" msprop:FriendlyName="KrajPochodzenia">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="25" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Pilot" msprop:design-time-name="04691848-7c09-4e21-8e25-0ec381c9cf99" msprop:DbTableName="Pilot" msprop:FriendlyName="Pilot" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdPilota" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="2bc1ad97-7f39-4f54-8599-92aedd0b4d8e" msprop:DbColumnName="IdPilota" msprop:FriendlyName="IdPilota" type="xs:int" />
+                  <xs:element name="Nazwisko" msprop:design-time-name="d517d717-fefb-4214-84cf-39abd3689cad" msprop:DbColumnName="Nazwisko" msprop:FriendlyName="Nazwisko">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Płeć" msprop:design-time-name="eea299f4-cbb5-42ab-9147-796316ae2618" msprop:DbColumnName="Płeć" msprop:FriendlyName="Płeć">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Wiek" msprop:design-time-name="98ab22fc-50a1-4902-b0e9-c70438b0c85f" msprop:DbColumnName="Wiek" msprop:FriendlyName="Wiek" type="xs:int" />
+                  <xs:element name="IlośćGodzinLotu" msprop:design-time-name="1fa3e906-f71c-45c6-b43c-d048c34610fc" msprop:DbColumnName="IlośćGodzinLotu" msprop:FriendlyName="IlośćGodzinLotu" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Samolot" msprop:design-time-name="36091376-83a4-44f9-9996-9c37bfe79c1e" msprop:DbTableName="Samolot" msprop:FriendlyName="Samolot" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdSamolotu" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="0b044056-38af-41c4-ad6a-cc3485574ed2" msprop:DbColumnName="IdSamolotu" msprop:FriendlyName="IdSamolotu" type="xs:int" />
+                  <xs:element name="Model" msprop:design-time-name="41026754-a2f4-45c0-b36e-47cba2683c6d" msprop:DbColumnName="Model" msprop:FriendlyName="Model">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MaksPasażerów" msprop:design-time-name="49a026c6-d4cd-4ef5-bc04-c9509b094df9" msprop:DbColumnName="MaksPasażerów" msprop:FriendlyName="MaksPasażerów" type="xs:int" />
+                  <xs:element name="PojemnośćBaku" msprop:design-time-name="4649816c-25da-497a-b9be-b4aa0b2f2b34" msprop:DbColumnName="PojemnośćBaku" msprop:FriendlyName="PojemnośćBaku" type="xs:int" />
+                  <xs:element name="MaksPrędkość" msprop:design-time-name="5c9fffde-5462-4f87-bf9d-f322f5124878" msprop:DbColumnName="MaksPrędkość" msprop:FriendlyName="MaksPrędkość" type="xs:int" />
+                  <xs:element name="DataPrzyjęcia" msprop:design-time-name="3e12cfcc-803a-43dc-806f-7b5c353b9a54" msprop:DbColumnName="DataPrzyjęcia" msprop:FriendlyName="DataPrzyjęcia" type="xs:dateTime" />
+                  <xs:element name="CzyRejsowy" msprop:design-time-name="044ecc88-a00f-4001-8007-551f911efe9b" msprop:DbColumnName="CzyRejsowy" msprop:FriendlyName="CzyRejsowy" type="xs:boolean" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Lotnisko" />
+          <xs:field xpath="IdLotniska" />
+        </xs:unique>
+        <xs:unique name="dbo_LotPasażera_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_LotPasażera" />
+          <xs:field xpath="IdLotu" />
+        </xs:unique>
+        <xs:unique name="dbo_Pilot_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Pilot" />
+          <xs:field xpath="IdPilota" />
+        </xs:unique>
+        <xs:unique name="dbo_Samolot_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Samolot" />
+          <xs:field xpath="IdSamolotu" />
+        </xs:unique>
+        <xs:keyref name="fk_IdSamolotu" refer="dbo_Samolot_Constraint1">
+          <xs:selector xpath=".//dbo_LotPasażera" />
+          <xs:field xpath="IdSamolotu" />
+        </xs:keyref>
+        <xs:keyref name="fk_IdPilota" refer="dbo_Pilot_Constraint1">
+          <xs:selector xpath=".//dbo_LotPasażera" />
+          <xs:field xpath="IdPilota" />
+        </xs:keyref>
+        <xs:keyref name="fk_IdLotniskoWylotu" refer="Constraint1">
+          <xs:selector xpath=".//dbo_LotPasażera" />
+          <xs:field xpath="IdLotniskoWylotu" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Zaliczenie_x0020_HD_x0020_181960_x0020_DSV xmlns="" />
+  </Schema>
+</DataSourceView>
