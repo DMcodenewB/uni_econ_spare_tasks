@@ -11,8 +11,8 @@ public class ViewInterface {
 
     private BusinessLogic controller;
 
-    public ViewInterface(){
-        controller = new BusinessLogic();
+    public ViewInterface(BusinessLogic controller){
+        this.controller = controller;
     }
 
     public BusinessLogic getController() {

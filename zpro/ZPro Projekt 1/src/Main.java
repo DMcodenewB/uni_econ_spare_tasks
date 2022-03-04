@@ -4,6 +4,7 @@ import model.Offices.TaxOffice;
 import model.Owner;
 import view.ViewInterface;
 
+
 /*
  * Main - klasa sterująca.
  */
@@ -11,12 +12,14 @@ import view.ViewInterface;
 public class Main {
 
     public static void main(String[] args) {
-        ViewInterface vi = new ViewInterface();
+        BusinessLogic controller = new BusinessLogic();
+        ViewInterface vi = new ViewInterface(controller);
+        ViewInterface vi2 = new ViewInterface(controller);
         Owner o1 = new Owner("David", "Marshall");
         Owner o2 = new Owner("Kristof", "Chodak");
         Owner o3 = new Owner("Greg", "Schwarz");
         TaxOffice skarbowka = new TaxOffice();
-        BusinessLogic controller = vi.getController();
+
 
         //dodanie kont
         controller.addNewAccount(o1, AccType.BANKING);
